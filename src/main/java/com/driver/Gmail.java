@@ -30,7 +30,6 @@ public class Gmail extends Email {
           }
               Inbox.add(new mails(date, sender, message));
               InboxSize++;
-              //System.out.println(InboxSize);
 
     }
 
@@ -38,7 +37,7 @@ public class Gmail extends Email {
         // Each message is distinct
         // If the given message is found in any mail in the inbox, move the mail to trash, else do nothing
          for(mails temp : Inbox){
-             if(temp.message == message){
+             if(temp.message.equals(message)){
                  Trash.add(temp);
                  break;
              }
