@@ -43,7 +43,7 @@ public class Email {
             if(ch >='0' && ch <= '9') CountDigit++;
             if((ch>=(char)32 && ch<=(char)47) || (ch>=(char)58 && ch<=(char)64) || (ch>=(char)91 && ch<=(char)96) || (ch>=(char)123 &&ch<=(char)126)) CountSpeChar++;
         }
-        return newPassword.length()==8 && CountCapsLetter>=1 && CountSmallLetter>=1 && CountDigit>=1 && CountSpeChar>=1;
+        return newPassword.length()>=8 && CountCapsLetter>=1 && CountSmallLetter>=1 && CountDigit>=1 && CountSpeChar>=1;
     }
 
 }
